@@ -45,4 +45,4 @@ while best1!=best2 and best2!=best3:
         counter+=1
     if counter==50:
         break
-print pop.getX(pop.best)
+print int("".join(map(str,pop.best[1:(len(pop.best)+1)/2])),2)/float(int("".join(map(str,pop.best[(len(pop.best)+1)/2:])),2))
